@@ -6,7 +6,7 @@ function fizzbuzz() {
     console.log('Welcome to FizzBuzz!');
 
     // Put your code here...
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 256; i++) {
         let print_out = "";
 
         if (i % 3 == 0){
@@ -29,8 +29,8 @@ function fizzbuzz() {
             }
             
         } if (i % 17 == 0){
-            print_out += " "
-            new_print_out = ""
+            print_out += " ";
+            let new_print_out = "";
             for (let n = 1; n <= (print_out.length / 4); n++) {
                 new_print_out += print_out.slice(-4*n-1, -4*(n-1)-1);
             }          
